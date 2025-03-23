@@ -1,7 +1,7 @@
 body{
     /*background-color: rgb(236, 232, 232);*/
     margin: 1rem 5%;
-    background-color: #1c548d;
+    background-color: #07223d;
 
 }
 
@@ -237,7 +237,8 @@ h3{
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #07223d;;
+    background-color: #07223d;
+
 }
 
 .menu-main {
@@ -454,5 +455,16 @@ article.gallery p {
 
     header img {
         width: 80%; /* Ajusta el tamaño del logo */
+    }
+}
+
+/*------------------------- TERCERA TANDA de Cambira la Responsividad (agregados) -------------------- */
+
+@media (max-width: 768px) {
+    .background-menu {
+        background-size: cover;  /* Asegura que la imagen cubra todo el fondo */
+        background-position: center center;  /* Centra la imagen en el fondo */
+        background-image: cover;  /* Asegura que la imagen cubra todo el fondo */
+        background-repeat: no-repeat;  /* Evita que la imagen se repita */
     }
 }
