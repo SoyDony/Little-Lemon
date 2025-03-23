@@ -14,7 +14,10 @@ header{
  
 header img{
     width: 50%;
+    max-width: 100%; /* Asegura que no se desborde */   
+    height: auto; /* Mantén la proporción de la imagen */
 }
+
 
 nav ul{
     display: flex; /*hace que los elementos de la lista se alineen en una sola fila list-style: none;quita los puntos de la lista*/
@@ -41,6 +44,7 @@ nav ul li a:hover{
     color: yellow; /* El nuevo color cuando pasas el mouse */
 }
 
+
 section.promo {
     display: flex;
     background-image: url("../img/fondo_promo.jpg");
@@ -52,6 +56,8 @@ section.promo {
     border-radius: 20px;
     margin: 2rem auto;
 }
+
+
 
 h1{
     text-align: left;
@@ -103,12 +109,16 @@ p{
 section.gallery{
     display: flex; /* Hace que los elementos se alineen en una sola fila ESTO TE SALVAA*/
     gap: 2rem; /* Ajusta el espacio entre los artículos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
 }
+
 
 article{
     position: relative; /* Permite que los elementos hijos usen posición absoluta */
     flex: 1; /* Hace que el artículo ocupe todo el espacio disponible */
+    min-width: 280px; /* Asegura que cada artículo tenga un tamaño mínimo */
 }
+
 
 article.gallery{
     margin: 0rem;
@@ -303,6 +313,49 @@ article.gallery p {
 .oferta-p{
    margin-top: 0.5rem;
 }
+
+
+/* ----------------------------------- Cambios para la Responsividad (agregados) ----------------------------------- */
+@media (max-width: 768px) { 
+    /* 1. Cambios en la galería */
+    section.gallery {
+        flex-direction: column; /* Apilar los artículos verticalmente */
+        gap: 1rem; /* Espacio entre artículos */
+    }
+
+    /* 2. Eliminar márgenes negativos */
+    article.gallery p {
+        margin-top: 0; /* Eliminar el margen negativo */
+    }
+
+    /* 3. Ajustar el tamaño de las imágenes */
+    img {
+        max-width: 100%; /* Asegura que las imágenes no se desborden */
+        height: auto;
+    }
+
+    /* 4. Ajustar el tamaño de las fuentes en pantallas pequeñas */
+    h1, h2, h3, p {
+        font-size: 1.2rem; /* Reducción del tamaño de la fuente */
+    }
+
+    /* 5. Cambiar la dirección del menú en dispositivos pequeños */
+    nav ul {
+        flex-direction: column; /* Apilar los enlaces de navegación */
+    }
+
+    nav ul li {
+        margin: 1rem 0; /* Espaciado entre los elementos del menú */
+    }
+
+    /* 6. Ajustar el footer */
+    footer {
+        flex-direction: column; /* Apilar los elementos del footer */
+        align-items: center; 
+    }
+}
+
+
 
 
 
