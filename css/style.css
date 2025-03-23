@@ -416,7 +416,7 @@ article.gallery p {
     }
 
     h2 {
-        margin: 0.5rem; /* Reduce el margen alrededor de los títulos */
+        margin: 1rem; /* Reduce el margen alrededor de los títulos */
     }
 }
 
