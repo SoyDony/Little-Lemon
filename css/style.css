@@ -1,0 +1,308 @@
+body{
+    /*background-color: rgb(236, 232, 232);*/
+    margin: 1rem 5%;
+    background-color: #07223d;
+
+}
+
+header{
+   display: flex;
+   justify-content: center;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+ 
+header img{
+    width: 50%;
+}
+
+nav ul{
+    display: flex; /*hace que los elementos de la lista se alineen en una sola fila list-style: none;quita los puntos de la lista*/
+    justify-content: center;
+    background-color:#e67e22;
+    border-radius: 20px;
+    margin: 2, 2, 0, 2;
+    list-style:none;
+    padding: 10px;
+}
+
+nav ul li{
+    margin: 0 10px; /*el cero define el margen de arriba y abajo y el 10 el margen de la izquierda y derecha*/;
+}
+
+nav ul li a{
+    color:#e4deaf;
+    text-decoration: none; /*quita el subrayado de los enlaces*/
+    font-size: 2rem; 
+    transition: color 0.3s ease; /* Transición para el cambio de color */
+}
+
+nav ul li a:hover{
+    color: yellow; /* El nuevo color cuando pasas el mouse */
+}
+
+section.promo {
+    display: flex;
+    background-image: url("../img/fondo_promo.jpg");
+    background-size: cover; /* Ajusta la imagen al tamaño de la sección */
+    background-position: center; 
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 200px; /* Ajusta según necesidad */
+    width: 100%; /* Para que ocupe todo el ancho */
+    border-radius: 20px;
+    margin: 2rem auto;
+}
+
+h1{
+    text-align: left;
+    font-size: 3rem;
+    margin-left: 2rem;
+    color:yellow;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.off{
+    text-align: left;
+    font-size: 3rem;
+    margin-left: 2rem;
+    color:yellow;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    animation: colorChange 5s infinite; /* Aplica la animación con duración de 5 segundos y repetición infinita */
+   
+}
+
+@keyframes colorChange {
+    0% {
+        color: yellow;
+    }
+    25% {
+        color: #0e0d0d; /* Rojo tomate */
+    }
+    50% {
+        color: yellow; /* Verde lima */
+    }
+    75% {
+        color: black; /* Azul */
+    }
+    100% {
+        color: yellow; /* Regresa al amarillo */
+    }
+}
+
+p{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: wheat;
+}
+
+section.gallery{
+    display: flex; /* Hace que los elementos se alineen en una sola fila ESTO TE SALVAA*/
+    gap: 2rem; /* Ajusta el espacio entre los artículos */
+}
+
+article{
+    position: relative; /* Permite que los elementos hijos usen posición absoluta */
+    flex: 1; /* Hace que el artículo ocupe todo el espacio disponible */
+}
+
+article.gallery{
+    margin: 0rem;
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna */
+    align-items: left; /* Alinea los elementos a la izquierda */
+    background-color: wheat;
+    border-radius: 2rem;
+}
+
+article.gallery img{
+    max-width: 90%;
+    margin-bottom: 8rem;    
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+h2{
+    font-size: 2rem;
+    display: flex;
+    margin: 1rem;
+    color:wheat;
+}
+
+article.gallery p{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: -6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: black;
+    transition: height 0.5s ease-in-out; /* Agrega una transición suave */
+}
+
+article.gallery a{
+    margin-left :1rem;
+    margin-bottom: 1rem;
+}
+
+footer{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between; /* Separa la imagen a la izquierda y el texto a la derecha */
+    margin-bottom: 4rem;
+}
+
+footer img{
+    width: 6%;
+    margin-left: 2rem;
+}
+
+
+footer p {
+    color: wheat;
+    text-align: left;
+    font-size: 1rem;
+    position: relative; /* Necesario para colocar el pseudo-elemento */
+    padding-top: 1rem; /* Espacio entre el texto y la línea */
+ }
+ 
+ footer p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0%; /* Hace que la línea se extienda más allá del texto */
+    width: 250%; /* Hace que la línea sea más larga que el texto */
+    height: 2px;
+    background-color: wheat;
+ }
+
+/*##########################ABOUT###################################*/
+
+.about-title{
+    color: wheat;
+    display: flex;
+    text-align: center;
+}
+
+.about-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-p{
+    color: wheat;
+}
+
+h3{
+    font-size: 2rem;
+    display: flex;
+    margin: 1rem;
+    text-align: center;
+    color: wheat;
+}
+
+.h3-menu{
+    color: black;
+}
+
+.about-body{
+    background-color: #07223d;
+}
+
+/*##################MENU##############################################*/
+
+
+.menu{
+    color: wheat;
+}
+
+.background-menu{
+    background-image: url("../img/fondo-menu.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #07223d;;
+}
+
+.menu-main {
+    display: flex;
+    flex-direction: column; /* Elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente si el contenedor tiene altura */
+    text-align: left; /* Centra el texto */
+    width: 100%;
+}
+
+.menu-main section {
+    width: 80%; /* Ajusta el ancho de los elementos */
+    max-width: 600px; /* Máximo ancho para que no se extienda demasiado */
+    margin-bottom: 1rem; /* Espaciado entre secciones */
+}
+
+.ul-menu{
+    font-size: 1.5rem;
+}
+
+.menu-title{
+    justify-content: center;
+    color:rgb(0, 0, 0);
+    text-decoration:underline;
+}
+
+.header-contacto{
+    color: wheat;
+}
+
+.body-contacto{
+    background-color:#07223d;;
+}
+
+/* Estilos para ocultar el contenido adicional inicialmente */
+.more-text {
+    display: none;
+}
+
+/* Cuando el artículo tiene la clase "expanded", mostrar el texto */
+article.gallery.expanded .more-text {
+    display: inline;
+}
+
+/* Estilo para el botón */
+.toggle-btn {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #d8db27;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background-color: #f48c06;
+}
+
+article.gallery p {
+    flex-grow: 1; /* Asegura que el párrafo ocupe el espacio disponible */
+}
+
+section.gallery .toggle-btn:hover {
+    background-color: #f48c06;
+}
+
+article.gallery p {
+    flex-grow: 1; /* Asegura que el párrafo ocupe el espacio disponible dentro del artículo */
+    margin-bottom: 1rem; /* Espacio debajo del texto */
+}
+
+.oferta-p{
+   margin-top: 0.5rem;
+}
+
+
+

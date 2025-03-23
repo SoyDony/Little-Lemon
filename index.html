@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"> <!--lang="en": Es un atributo que especifica el idioma del contenido para navegadores y motores de búsqueda. En este caso, "en" significa inglés.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--la pantalla se adapta al dispositivo-->
+    <meta name="description" content="Little Lemon">
+    <meta name="author" content="Daniel Duran">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <!--ESTO ES OPEN GRAPH, SE USA PARA REDES SOCIALES, SERIA COMO LA VISTA PREVIA CUANDO COMPARTIS UN ENLACE EN WHATSAPP-->
+    <meta property="og:title" content="Little Lemon">
+    <meta property="og:description" content="Author's Mediterranean cuisine">
+    <meta property="og:image" content="https://example.com/imagen.jpg"> <!--esto es para que aparesca la imagen correcta en redes sociales (open graph) DEBO TERMINARLO CUANDO KO TENGA LISTO-->
+    <meta property="og:url" content="https://Littlelemon.com">
+
+    <title>Little Lemon</title>
+</head>
+<body>
+   
+    <header> <!--Cabecera de la página-->
+        <img src="img/logo_header.png" alt="Little Lemon logo"> <!--alt="Little Lemon logo": Es un atributo que proporciona un texto alternativo para una imagen, si no se puede mostrar la imagen. -->
+    </header>
+    <nav> <!--Navegación de la página-->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Menu.html">Menú</a></li>
+            <li><a href="About.html">Sobre Nosotros</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="promo">
+            <article class="offer">
+                <h1 class="off">30% Off Todos los Miercoles!!</h1>     
+                <p class="oferta-p">Todos los miércoles, aprovecha un 30% de descuento en todos nuestros platos. Es el día perfecto para disfrutar de la deliciosa cocina mediterránea a un precio increíble. Ya sea para una comida en familia o una cena especial, nuestros platos frescos y llenos de sabor te están esperando.</p>
+            </article> 
+        </section>
+        <section class="gallery">
+            <article class="gallery">
+                <h2>Nuestro Nuevo Menú</h2>
+                <img src="img/plato1.png" alt="plato1">
+                <p class="gallery-content">En Little Lemon, celebramos la riqueza de la cocina mediterránea con platos frescos, auténticos y llenos de sabor. Utilizamos ingredientes de la mejor calidad, desde aceites de oliva extra virgen hasta hierbas aromáticas y especias tradicionales, para llevar a tu mesa lo mejor del Mediterráneo.<span class="more-text">
+
+                    Descubre nuestra selección de entrantes, platos principales y postres, inspirados en recetas clásicas de Grecia, Italia, España y más. Desde ensaladas frescas y mariscos hasta carnes a la parrilla y pastas artesanales, cada bocado es una invitación a disfrutar de una experiencia única.
+                    
+                    Déjate sorprender por nuestros sabores y vive un viaje gastronómico sin salir de la ciudad.</span></p>
+                    <button class="toggle-btn">Leer más</button>
+                    <a href="menu.html" class="gallery-link">Mirá nuestro nuevo menú!</a>
+            </article>
+            <article class="gallery">
+                <h2>Reservá Tu Mesa</h2>
+                <img src="img/plato2.png" alt="plato2">
+                <p class="gallery-content">En Little Lemon, queremos que disfrutes de una experiencia mediterránea inolvidable en el mejor ambiente. Ya sea para una cena íntima, una reunión con amigos o una celebración especial, tenemos el espacio perfecto para ti.
+
+                    Reserva tu mesa de forma rápida y sencilla. <span class="more-text">Solo elige la fecha, la hora y el número de personas, y nosotros nos encargamos del resto.
+                    
+                    Déjanos ser parte de tu próximo momento especial. ¡Te esperamos!</span>
+                </p>
+                <button class="toggle-btn">Leer más</button>
+                <a href="about.html" class="link-gallery2">Sobre Nosotros</a>
+            </article>
+            <article class="gallery">
+                <h2>Nuestros Horarios</h2>
+                <img src="img/cocinero.png" alt="cocinero">
+                <p class="gallery-content">En Little Lemon, estamos listos para recibirte y ofrecerte lo mejor de la cocina mediterránea. <br><br>
+                    
+                    🕒 Lunes a Viernes: 12:00 PM - 10:00 PM <br><br>
+                    🕒 Sábados y Domingos: 10:00 AM - 11:00 PM 
+                    <span class="more-text"> Ya sea para un almuerzo relajado, una cena especial o un brunch de fin de semana, siempre tendrás un lugar en nuestra mesa.</span>
+                </p>
+                <button class="toggle-btn">Leer más</button>
+                <a href="contact.html" class="link-gallery3">Contactanos</a>
+            </article>
+        </section>
+        <footer>
+            <img src="img/footer.png" alt="logo_footer">
+            <p>Copyright Little Lemon &copy; 2021</p>
+        </footer>
+    </main>
+<script src="script.js" defer></script>
+</body>
+</html>
