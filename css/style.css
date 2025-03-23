@@ -19,6 +19,7 @@ header img{
 }
 
 
+
 nav ul{
     display: flex; /*hace que los elementos de la lista se alineen en una sola fila list-style: none;quita los puntos de la lista*/
     justify-content: center;
@@ -356,6 +357,102 @@ article.gallery p {
 }
 
 
+/* ------------------------SEGUNDA TANDA de Cambios para la Responsividad (agregados) ----------------------------------- */
 
+/* 1) Header "Little Lemon" más grande en dispositivos pequeños */
+@media (max-width: 768px) {
+    header img {
+        width: 80%; /* Aumenta el tamaño del logo en pantallas pequeñas */
+    }
 
+    h1 {
+        font-size: 2.5rem; /* Aumenta el tamaño del texto */
+    }
+}
 
+/* 2) Barra de navegación más pequeña en móviles */
+@media (max-width: 768px) {
+    nav ul {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente en la navegación */
+    }
+
+    nav ul li {
+        margin: 0 5px; /* Reduce el margen entre los elementos de la lista */
+    }
+}
+
+/* 3) Párrafo dentro de la promo ajustado */
+@media (max-width: 768px) {
+    section.promo {
+        flex-direction: column; /* Cambia a una columna para pantallas pequeñas */
+        height: auto; /* Ajusta la altura */
+    }
+
+    .promo p {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto */
+        margin: 1rem; /* Ajusta los márgenes */
+    }
+}
+
+/* 4) Reducir padding entre las imágenes de los artículos y h2 */
+@media (max-width: 768px) {
+    article.gallery img {
+        margin-bottom: 1rem; /* Reduce el margen debajo de las imágenes */
+    }
+
+    h2 {
+        margin: 0.5rem; /* Reduce el margen alrededor de los títulos */
+    }
+}
+
+/* 5) Logo del footer más grande */
+@media (max-width: 768px) {
+    footer img {
+        width: 15%; /* Aumenta el tamaño del logo */
+    }
+}
+
+/* 6) En la página del menú, el texto blanco y el logo más grande */
+@media (max-width: 768px) {
+    .background-menu {
+        background-color: #07223d; /* Fondo oscuro consistente */
+    }
+
+    .menu {
+        color: #fff; /* Asegura que el texto sea blanco */
+    }
+
+    footer img {
+        width: 20%; /* Aumenta el logo del pie de página */
+    }
+}
+
+/* 7) Ajustes en la página "Sobre Nosotros" */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem; /* Aumenta el tamaño del título */
+    }
+
+    .about-nav {
+        font-size: 1.5rem; /* Reduce el tamaño de la barra de navegación */
+    }
+
+    header img {
+        width: 80%; /* Ajusta el tamaño del logo */
+    }
+}
+
+/* 8) Ajustes en la página de "Contacto" */
+@media (max-width: 768px) {
+    .header-contacto {
+        font-size: 2rem; /* Aumenta el tamaño del título */
+    }
+
+    .about-nav {
+        font-size: 1.5rem; /* Reduce el tamaño de la barra de navegación */
+    }
+
+    header img {
+        width: 80%; /* Ajusta el tamaño del logo */
+    }
+}
