@@ -47,7 +47,7 @@ nav ul li a:hover{
 
 section.promo {
     display: flex;
-    background-image: url("../img/fondo_promo.jpg");
+    background-image: url("../img/restaurant\ mediterraneo.jpg");
     background-size: cover; /* Ajusta la imagen al tamaño de la sección */
     background-position: center; 
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -325,7 +325,7 @@ article.gallery p {
 
 .oferta-p{
    margin-top: 0.5rem;
-   color: whitesmoke;
+   color: rgb(0, 0, 0);
    font-style: oblique;
 }
 
