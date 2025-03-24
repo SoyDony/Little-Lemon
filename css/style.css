@@ -371,7 +371,6 @@ article.gallery p {
 
     nav ul li {
         margin: 1rem 0; /* Espaciado entre los elementos del menú */
-        font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
     }
 
     /* 5. Sección de promociones */
@@ -401,6 +400,6 @@ article.gallery p {
         background-repeat: no-repeat;  /* Evita que la imagen se repita */
         background-color: #AEC6CF;
         background-image: url("../img/fondo-menu.png");
-        background-size: auto 50%; /* Mantiene la proporción y ajusta el tamaño */
+        background-size: contain;
     }
 }
