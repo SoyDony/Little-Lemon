@@ -19,7 +19,6 @@ header img{
 }
 
 
-
 nav ul{
     display: flex; /*hace que los elementos de la lista se alineen en una sola fila list-style: none;quita los puntos de la lista*/
     justify-content: center;
@@ -364,17 +363,28 @@ article.gallery p {
     }
 
     /* 4. Barra de navegación */
+    nav {
+        width: 100%;
+    }
     
     
     nav ul {
         flex-direction: column; /* Apilar los enlaces de navegación */
-        font-size: 0.2rem; /* Reduce el tamaño de la fuente en la navegación */
-        background-size: auto;
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente en la navegación */
+        padding: 0;
+        text-align: center;
     }
 
     nav ul li {
-        margin: 0.5rem 0; /* Espaciado entre los elementos del menú */
+        margin: 0.3rem 0; /* Espaciado reducido */
     }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Reducir aún más si es necesario */
+        padding: 0.5rem; /* Asegurar espacio alrededor de los enlaces */
+        display: block; /* Hacer que los enlaces ocupen el ancho completo */
+    }
+
 
     /* 5. Sección de promociones */
     section.promo {
