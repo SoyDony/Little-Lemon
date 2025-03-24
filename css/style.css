@@ -380,7 +380,7 @@ article.gallery p {
     }
 
     nav ul li a {
-        font-size: 0.9rem; /* Reducir aún más si es necesario */
+        font-size: 1.2rem; /* Reducir aún más si es necesario */
         padding: 0.5rem; /* Asegurar espacio alrededor de los enlaces */
         display: block; /* Hacer que los enlaces ocupen el ancho completo */
     }
