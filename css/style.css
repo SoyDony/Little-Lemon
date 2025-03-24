@@ -404,7 +404,7 @@ article.gallery p {
     /* 8. Fondo de la página de menú */
     .background-menu {
         background-position: center;  /* Centra la imagen en el fondo */
-        background-size: contain; /* Ajusta la imagen de fondo */
+        background-size: cover; /* Ajusta la imagen de fondo */
         background-repeat: no-repeat;  /* Evita que la imagen se repita */
         background-color: #AEC6CF;
     }
