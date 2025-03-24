@@ -371,6 +371,7 @@ article.gallery p {
 
     nav ul li {
         margin: 0.5rem 0; /* Espaciado entre los elementos del menú */
+        font-size: small;
     }
 
     /* 5. Sección de promociones */
@@ -399,9 +400,6 @@ article.gallery p {
         font-size: 2rem; /* Aumenta el tamaño del título */
     }
 
-    .about-nav {
-        font-size: 1.5rem; /* Ajusta la barra de navegación */
-    }
 
     /* 8. Fondo de la página de menú */
     .background-menu {
