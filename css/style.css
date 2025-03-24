@@ -407,6 +407,5 @@ article.gallery p {
         background-size: contain; /* Ajusta la imagen de fondo */
         background-repeat: no-repeat;  /* Evita que la imagen se repita */
         background-color: #AEC6CF;
-        max-width: 30%;
     }
 }
