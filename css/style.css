@@ -332,72 +332,48 @@ article.gallery p {
 
 
 /* ----------------------------------- Cambios para la Responsividad (agregados) ----------------------------------- */
-@media (max-width: 768px) { 
-    /* 1. Cambios en la galería */
+/* ---------------------------- Cambios para la Responsividad ---------------------------- */
+@media (max-width: 768px) {
+    /* 1. Ajustes generales */
+    h1, h2, h3, p {
+        font-size: 1.2rem; /* Reducción del tamaño de la fuente */
+    }
+
+    header img {
+        width: 80%; /* Aumenta el tamaño del logo en pantallas pequeñas */
+    }
+
+    /* 2. Galería */
     section.gallery {
         flex-direction: column; /* Apilar los artículos verticalmente */
         gap: 1rem; /* Espacio entre artículos */
     }
 
-    /* 2. Eliminar márgenes negativos */
     article.gallery p {
-        margin-top: 0; /* Eliminar el margen negativo */
+        margin-top: 0; /* Eliminar márgenes negativos */
     }
 
-    /* 3. Ajustar el tamaño de las imágenes */
+    article.gallery img {
+        margin-bottom: 1rem; /* Reduce el margen debajo de las imágenes */
+    }
+
+    /* 3. Ajuste de imágenes */
     img {
         max-width: 100%; /* Asegura que las imágenes no se desborden */
         height: auto;
     }
 
-    /* 4. Ajustar el tamaño de las fuentes en pantallas pequeñas */
-    h1, h2, h3, p {
-        font-size: 1.2rem; /* Reducción del tamaño de la fuente */
-    }
-
-    /* 5. Cambiar la dirección del menú en dispositivos pequeños */
+    /* 4. Barra de navegación */
     nav ul {
         flex-direction: column; /* Apilar los enlaces de navegación */
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente en la navegación */
     }
 
     nav ul li {
         margin: 1rem 0; /* Espaciado entre los elementos del menú */
     }
 
-    /* 6. Ajustar el footer */
-    footer {
-        flex-direction: column; /* Apilar los elementos del footer */
-        align-items: center; 
-    }
-}
-
-
-/* ------------------------SEGUNDA TANDA de Cambios para la Responsividad (agregados) ----------------------------------- */
-
-/* 1) Header "Little Lemon" más grande en dispositivos pequeños */
-@media (max-width: 768px) {
-    header img {
-        width: 80%; /* Aumenta el tamaño del logo en pantallas pequeñas */
-    }
-
-    h1 {
-        font-size: 2.5rem; /* Aumenta el tamaño del texto */
-    }
-}
-
-/* 2) Barra de navegación más pequeña en móviles */
-@media (max-width: 768px) {
-    nav ul {
-        font-size: 1.5rem; /* Reduce el tamaño de la fuente en la navegación */
-    }
-
-    nav ul li {
-        margin: 0 5px; /* Reduce el margen entre los elementos de la lista */
-    }
-}
-
-/* 3) Párrafo dentro de la promo ajustado */
-@media (max-width: 768px) {
+    /* 5. Sección de promociones */
     section.promo {
         flex-direction: column; /* Cambia a una columna para pantallas pequeñas */
         height: auto; /* Ajusta la altura */
@@ -407,71 +383,31 @@ article.gallery p {
         font-size: 1.2rem; /* Ajusta el tamaño del texto */
         margin: 1rem; /* Ajusta los márgenes */
     }
-}
 
-/* 4) Reducir padding entre las imágenes de los artículos y h2 */
-@media (max-width: 768px) {
-    article.gallery img {
-        margin-bottom: 1rem; /* Reduce el margen debajo de las imágenes */
-    }
-
-    h2 {
-        margin: 1rem; /* Reduce el margen alrededor de los títulos */
-    }
-}
-
-/* 5) Logo del footer más grande */
-@media (max-width: 768px) {
-    footer img {
-        width: 15%; /* Aumenta el tamaño del logo */
-    }
-
-    .menu {
-        color:black; /* Asegura que el texto sea blanco */
+    /* 6. Footer */
+    footer {
+        flex-direction: column; /* Apilar los elementos del footer */
+        align-items: center;
     }
 
     footer img {
         width: 20%; /* Aumenta el logo del pie de página */
     }
-}
 
-/* 7) Ajustes en la página "Sobre Nosotros" */
-@media (max-width: 768px) {
-    .about-title {
+    /* 7. Ajustes específicos de algunas páginas */
+    .about-title, .header-contacto {
         font-size: 2rem; /* Aumenta el tamaño del título */
     }
 
     .about-nav {
-        font-size: 1.5rem; /* Reduce el tamaño de la barra de navegación */
+        font-size: 1.5rem; /* Ajusta la barra de navegación */
     }
 
-    header img {
-        width: 80%; /* Ajusta el tamaño del logo */
-    }
-}
-
-/* 8) Ajustes en la página de "Contacto" */
-@media (max-width: 768px) {
-    .header-contacto {
-        font-size: 2rem; /* Aumenta el tamaño del título */
-    }
-
-    .about-nav {
-        font-size: 1.5rem; /* Reduce el tamaño de la barra de navegación */
-    }
-
-    header img {
-        width: 80%; /* Ajusta el tamaño del logo */
-    }
-}
-
-/*------------------------- TERCERA TANDA de Cambira la Responsividad (agregados) -------------------- */
-
-@media (max-width: 768px) {
+    /* 8. Fondo de la página de menú */
     .background-menu {
         background-position: center center;  /* Centra la imagen en el fondo */
-        background-image: 100%;  /* Asegura que la imagen cubra todo el fondo */
+        background-size: cover; /* Ajusta la imagen de fondo */
         background-repeat: no-repeat;  /* Evita que la imagen se repita */
-        background-color:#AEC6CF 
+        background-color: #AEC6CF;
     }
 }
