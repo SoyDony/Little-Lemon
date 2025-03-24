@@ -479,13 +479,9 @@ button:hover {
         width: 90%; /* Reduce el ancho del formulario en móviles */
     }
 
-    input, textarea {
+    input {
         font-size: 1rem; /* Hace el texto más legible */
         height: 40px; /* Reduce la altura de los inputs */
-    }
-
-    textarea {
-        height: 100px; /* Ajusta el tamaño del textarea */
     }
 
     button {
