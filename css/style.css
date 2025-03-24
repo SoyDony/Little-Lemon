@@ -154,7 +154,7 @@ article.gallery p{
 }
 
 article.gallery a{
-    margin-left :1rem;
+    margin-right :1rem;
     margin-bottom: 1rem;
 }
 
@@ -482,6 +482,11 @@ button:hover {
     input {
         font-size: 1rem; /* Hace el texto más legible */
         height: 40px; /* Reduce la altura de los inputs */
+    }
+
+    textarea {
+        font-size: 1rem; /* Hace el texto más legible */
+        height: 100px; /* Reduce la altura del textarea */
     }
 
     button {
