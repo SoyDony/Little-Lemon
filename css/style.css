@@ -481,7 +481,7 @@ button:hover {
     }
 
     input {
-        width: 60vw; /* Los inputs ocupan el 50% del ancho de la pantalla */
+        width: 70vw; /* Los inputs ocupan el 50% del ancho de la pantalla */
         height: 50px; /* Más altos para mejor visibilidad */
         font-size: 1.2rem; /* Texto más grande */
     }
