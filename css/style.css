@@ -334,12 +334,19 @@ article.gallery p {
 /* ---------------------------- Cambios para la Responsividad ---------------------------- */
 @media (max-width: 768px) {
     /* 1. Ajustes generales */
-    h1, h2, h3 {
+    h1{
+        font-size: 1.7rem; /* Reducción del tamaño de la fuente */
+    }
+
+    h2{
         font-size: 1.5rem; /* Reducción del tamaño de la fuente */
+    }
+    h3{
+        font-size: 1.2rem; /* Reducción del tamaño de la fuente */
     }
 
     p {
-        font-size: 1.2rem; /* Reducción del tamaño de la fuente */
+        font-size: 1rem; /* Reducción del tamaño de la fuente */
     }
 
 
