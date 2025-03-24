@@ -334,9 +334,14 @@ article.gallery p {
 /* ---------------------------- Cambios para la Responsividad ---------------------------- */
 @media (max-width: 768px) {
     /* 1. Ajustes generales */
-    h1, h2, h3, p {
+    h1, h2, h3 {
+        font-size: 1.5rem; /* Reducción del tamaño de la fuente */
+    }
+
+    p {
         font-size: 1.2rem; /* Reducción del tamaño de la fuente */
     }
+
 
     header img {
         width: 80%; /* Aumenta el tamaño del logo en pantallas pequeñas */
