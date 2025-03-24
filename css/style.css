@@ -365,13 +365,11 @@ article.gallery p {
 
     /* 4. Barra de navegación */
     
-    nav{
-        font-size: 1rem; /* Ajusta el tamaño de la fuente */
-    }
     
     nav ul {
         flex-direction: column; /* Apilar los enlaces de navegación */
-        font-size: 0.5rem; /* Reduce el tamaño de la fuente en la navegación */
+        font-size: 0.2rem; /* Reduce el tamaño de la fuente en la navegación */
+        background-size: auto;
     }
 
     nav ul li {
