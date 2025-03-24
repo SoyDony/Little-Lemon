@@ -370,7 +370,7 @@ article.gallery p {
     
     nav ul {
         flex-direction:row; /* Apilar los enlaces de navegación */
-        font-size: 0.8rem; /* Reduce el tamaño de la fuente en la navegación */
+        font-size: 1rem; /* Reduce el tamaño de la fuente en la navegación */
         padding: 0;
         text-align: center;
     }
