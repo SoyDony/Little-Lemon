@@ -473,7 +473,7 @@ button:hover {
     }
 
 
-/* Pantallas de 480px o menos (móviles más pequeños) */
+/* Pantallas de 768px o menos (móviles más pequeños) */
 @media (max-width: 768px) {
     form {
         width: 90%; /* Reduce el ancho del formulario en móviles */
@@ -485,8 +485,8 @@ button:hover {
     }
 
     textarea {
-        font-size: 2rem; /* Hace el texto más legible */
-        height: 100px; /* Reduce la altura del textarea */
+        font-size: 1rem; /* Hace el texto más legible */
+        padding: 12px;
     }
 
     button {
