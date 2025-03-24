@@ -472,19 +472,9 @@ button:hover {
         text-align: center;
     }
 
-    /* Pantallas de 768px o menos (tablets y móviles) */
-@media (max-width: 768px) {
-    input, textarea {
-        width: 100%; /* Hace que los campos ocupen todo el ancho */
-    }
-
-    button {
-        width: 100%; /* Botón más grande en móviles */
-    }
-}
 
 /* Pantallas de 480px o menos (móviles más pequeños) */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     form {
         width: 90%; /* Reduce el ancho del formulario en móviles */
     }
