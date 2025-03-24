@@ -390,6 +390,7 @@ article.gallery p {
 
     nav ul li {
         margin: 0.3rem 0; /* Espaciado reducido */
+        font-size: 1rem; /* Reducir aún más si es necesario */
     }
 
     nav ul li a {
