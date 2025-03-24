@@ -407,5 +407,6 @@ article.gallery p {
         background-size: cover; /* Ajusta la imagen de fondo */
         background-repeat: no-repeat;  /* Evita que la imagen se repita */
         background-color: #AEC6CF;
+        background-image: url("../img/fondo-menu.png");
     }
 }
