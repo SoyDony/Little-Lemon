@@ -485,7 +485,7 @@ button:hover {
     }
 
     textarea {
-        font-size: 1rem; /* Hace el texto más legible */
+        font-size: 2rem; /* Hace el texto más legible */
         height: 100px; /* Reduce la altura del textarea */
     }
 
