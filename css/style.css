@@ -429,4 +429,8 @@ article.gallery p {
         background-image: url("../img/fondo-menu.png");
         background-size: contain;
     }
+
+    .menu-title{
+        text-align: center;
+    }
 }
