@@ -154,8 +154,9 @@ article.gallery p{
 }
 
 article.gallery a{
-    margin-right :1rem;
+    margin-right :2rem;
     margin-bottom: 1rem;
+    text-align: right;
 }
 
 footer{
@@ -302,7 +303,6 @@ article.gallery.expanded .more-text {
     font-size: 1rem;
     background-color: #d8db27;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
