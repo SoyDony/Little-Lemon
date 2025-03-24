@@ -481,13 +481,13 @@ button:hover {
     }
 
     input {
-        width: 50vw; /* Los inputs ocupan el 50% del ancho de la pantalla */
+        width: 60vw; /* Los inputs ocupan el 50% del ancho de la pantalla */
         height: 50px; /* Más altos para mejor visibilidad */
         font-size: 1.2rem; /* Texto más grande */
     }
 
     textarea {
-        width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
+        width: 80vw; /* Ocupa el 100% del ancho de la pantalla */
         height: 150px; /* Mantiene una altura adecuada */
         font-size: 1.2rem; /* Texto más grande */
     }
