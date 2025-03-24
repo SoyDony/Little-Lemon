@@ -329,6 +329,44 @@ article.gallery p {
    font-style: oblique;
 }
 
+/*--------css para el formulario---------*/
+
+label{
+    display: block; /* Hace que los elementos se muestren en una línea */
+    margin-top: 1rem; /* Espacio arriba */
+    font-size: 1.2rem; /* Tamaño del texto */
+}
+
+input{
+    width: 30%; /* Hace que ocupe todo el ancho disponible */
+    height: 30px; /* Ajusta la altura */
+    font-size: 1rem; /* Tamaño del texto */
+    padding: 10px;
+}
+
+textarea {
+    width: 50%; /* Hace que ocupe todo el ancho disponible */
+    height: 150px; /* Ajusta la altura */
+    font-size: 1rem; /* Tamaño del texto */
+    padding: 10px;
+}
+
+button {
+    width: 150px; /* Ancho del botón */
+    height: 50px; /* Altura */
+    font-size: 18px; /* Tamaño del texto */
+    padding: 10px;
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+}
+
 
 /* ----------------------------------- Cambios para la Responsividad (agregados) ----------------------------------- */
 /* ---------------------------- Cambios para la Responsividad ---------------------------- */
@@ -433,4 +471,38 @@ article.gallery p {
     .menu-title{
         text-align: center;
     }
+
+    /* Pantallas de 768px o menos (tablets y móviles) */
+@media (max-width: 768px) {
+    input, textarea {
+        width: 100%; /* Hace que los campos ocupen todo el ancho */
+    }
+
+    button {
+        width: 100%; /* Botón más grande en móviles */
+    }
+}
+
+/* Pantallas de 480px o menos (móviles más pequeños) */
+@media (max-width: 480px) {
+    form {
+        width: 90%; /* Reduce el ancho del formulario en móviles */
+    }
+
+    input, textarea {
+        font-size: 1rem; /* Hace el texto más legible */
+        height: 40px; /* Reduce la altura de los inputs */
+    }
+
+    textarea {
+        height: 100px; /* Ajusta el tamaño del textarea */
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+
 }
