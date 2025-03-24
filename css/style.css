@@ -370,7 +370,7 @@ article.gallery p {
     }
 
     nav ul li {
-        margin: 1rem 0; /* Espaciado entre los elementos del menú */
+        margin: 0.5rem 0; /* Espaciado entre los elementos del menú */
     }
 
     /* 5. Sección de promociones */
