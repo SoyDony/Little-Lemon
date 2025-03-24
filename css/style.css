@@ -370,8 +370,8 @@ article.gallery p {
     }
 
     nav ul li {
-        margin: 0.5rem 0; /* Espaciado entre los elementos del menú */
-        font-size: small;
+        margin: 1rem 0; /* Espaciado entre los elementos del menú */
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
     }
 
     /* 5. Sección de promociones */
@@ -394,12 +394,6 @@ article.gallery p {
     footer img {
         width: 20%; /* Aumenta el logo del pie de página */
     }
-
-    /* 7. Ajustes específicos de algunas páginas */
-    .about-title, .header-contacto {
-        font-size: 2rem; /* Aumenta el tamaño del título */
-    }
-
 
     /* 8. Fondo de la página de menú */
     .background-menu {
