@@ -325,9 +325,10 @@ article.gallery p {
 }
 
 .oferta-p{
-   margin-top: 0.5rem;
+   margin-top: -1rem;
    color: rgb(0, 0, 0);
    font-style: oblique;
+   font-size: 2rem;
 }
 
 /*--------css para el formulario---------*/
@@ -367,6 +368,29 @@ button {
 button:hover {
     background-color: #0056b3; /* Color al pasar el mouse */
 }
+
+.redes{
+    display:flex;
+    font-size: 2rem;
+    color:blue;
+    display: inline;
+}
+
+.redes-f{
+    color:blue;
+}
+
+.redes-x{
+    color:#007bff(193, 212, 214);
+}
+
+.redes-i{
+    color:red
+}
+
+
+
+
 
 
 /* ----------------------------------- Cambios para la Responsividad (agregados) ----------------------------------- */
