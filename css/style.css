@@ -465,9 +465,9 @@ button:hover {
     nav ul li a {
         font-size: 1rem; /* Reducir aún más si es necesario */
         padding: 0.5rem; /* Asegurar espacio alrededor de los enlaces */
-        display: block; /* Hacer que los enlaces ocupen el ancho completo *
-        
-}
+        display: block; /* Hacer que los enlaces ocupen el ancho completo */
+    
+    }
 
 
     /* 5. Sección de promociones */
