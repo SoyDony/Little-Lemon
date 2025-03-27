@@ -392,7 +392,9 @@ button:hover {
     size: 3rem;
 }
 
-
+#reserva{
+    font-style: oblique;
+}
 
 /* ----------------------------------- Cambios para la Responsividad (agregados) ----------------------------------- */
 /* ---------------------------- Cambios para la Responsividad ---------------------------- */
