@@ -450,18 +450,24 @@ button:hover {
         font-size: 1rem; /* Reduce el tamaño de la fuente en la navegación */
         padding: 0;
         text-align: center;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+        justify-content: center; /* Centra los elementos */
     }
 
     nav ul li {
         margin: 0.3rem 0; /* Espaciado reducido */
         font-size: 1rem; /* Reducir aún más si es necesario */
+        flex: 1 1 auto; /* Permite que los elementos se ajusten */
+        text-align: center;
+        margin: 5px; /* Espacio entre los elementos */
     }
 
     nav ul li a {
         font-size: 1rem; /* Reducir aún más si es necesario */
         padding: 0.5rem; /* Asegurar espacio alrededor de los enlaces */
-        display: block; /* Hacer que los enlaces ocupen el ancho completo */
-    }
+        display: block; /* Hacer que los enlaces ocupen el ancho completo *
+        
+}
 
 
     /* 5. Sección de promociones */
