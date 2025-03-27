@@ -372,7 +372,6 @@ button:hover {
 .redes{
     display:flex;
     font-size: 2rem;
-    color:blue;
     display: inline;
 }
 
@@ -389,7 +388,9 @@ button:hover {
 }
 
 
-
+#hora{
+    size: 3rem;
+}
 
 
 
