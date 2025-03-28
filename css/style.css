@@ -1,5 +1,5 @@
 body{
-    /*background-color: rgb(236, 232, 232);*/
+    background-color: rgb(236, 232, 232);
     margin: 1rem 5%;
     background-color: #AEC6CF;
 
@@ -14,13 +14,13 @@ header{
  
 header img{
     width: 50%;
-    max-width: 100%; /* Asegura que no se desborde */   
-    height: auto; /* Mantén la proporción de la imagen */
+    max-width: 100%;   
+    height: auto; 
 }
 
 
 nav ul{
-    display: flex; /*hace que los elementos de la lista se alineen en una sola fila list-style: none;quita los puntos de la lista*/
+    display: flex; 
     justify-content: center;
     background-color:#e67e22;
     border-radius: 20px;
@@ -30,29 +30,29 @@ nav ul{
 }
 
 nav ul li{
-    margin: 0 10px; /*el cero define el margen de arriba y abajo y el 10 el margen de la izquierda y derecha*/;
+    margin: 0 10px; 
 }
 
 nav ul li a{
     color:#e4deaf;
-    text-decoration: none; /*quita el subrayado de los enlaces*/
+    text-decoration: none; 
     font-size: 2rem; 
-    transition: color 0.3s ease; /* Transición para el cambio de color */
+    transition: color 0.3s ease; 
 }
 
 nav ul li a:hover{
-    color: yellow; /* El nuevo color cuando pasas el mouse */
+    color: yellow; 
 }
 
 
 section.promo {
     display: flex;
     background-image: url("../img/restaurant\ mediterraneo.jpg");
-    background-size: cover; /* Ajusta la imagen al tamaño de la sección */
+    background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    height: 200px; /* Ajusta según necesidad */
-    width: 100%; /* Para que ocupe todo el ancho */
+    background-repeat: no-repeat; 
+    height: 200px; 
+    width: 100%; 
     border-radius: 20px;
     margin: 2rem auto;
 }
@@ -75,8 +75,7 @@ h1{
     color:yellow;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    animation: colorChange 5s infinite; /* Aplica la animación con duración de 5 segundos y repetición infinita */
-   
+    animation: colorChange 5s infinite; 
 }
 
 @keyframes colorChange {
@@ -84,16 +83,16 @@ h1{
         color: yellow;
     }
     25% {
-        color: #0e0d0d; /* Rojo tomate */
+        color: #0e0d0d; 
     }
     50% {
-        color: yellow; /* Verde lima */
+        color: yellow; 
     }
     75% {
-        color: black; /* Azul */
+        color: black; 
     }
     100% {
-        color: yellow; /* Regresa al amarillo */
+        color: yellow; 
     }
 }
 
@@ -107,24 +106,24 @@ p{
 }
 
 section.gallery{
-    display: flex; /* Hace que los elementos se alineen en una sola fila ESTO TE SALVAA*/
-    gap: 2rem; /* Ajusta el espacio entre los artículos */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+    display: flex; 
+    gap: 2rem; 
+    flex-wrap: wrap; 
 }
 
 
 article{
-    position: relative; /* Permite que los elementos hijos usen posición absoluta */
-    flex: 1; /* Hace que el artículo ocupe todo el espacio disponible */
-    min-width: 280px; /* Asegura que cada artículo tenga un tamaño mínimo */
+    position: relative; 
+    flex: 1; 
+    min-width: 280px; 
 }
 
 
 article.gallery{
     margin: 0rem;
     display: flex;
-    flex-direction: column; /* Apila los elementos en columna */
-    align-items: left; /* Alinea los elementos a la izquierda */
+    flex-direction: column; 
+    align-items: left; 
     background-color: wheat;
     border-radius: 2rem;
 }
@@ -150,7 +149,7 @@ article.gallery p{
     margin-left: 1rem;
     margin-right: 1rem;
     color:black;
-    transition: height 0.5s ease-in-out; /* Agrega una transición suave */
+    transition: height 0.5s ease-in-out;
 }
 
 article.gallery a{
@@ -163,7 +162,7 @@ article.gallery a{
 footer{
     display: flex;
     margin-top: 3rem;
-    justify-content: space-between; /* Separa la imagen a la izquierda y el texto a la derecha */
+    justify-content: space-between; 
     margin-bottom: 4rem;
 }
 
@@ -177,21 +176,21 @@ footer p {
     color: black;
     text-align: left;
     font-size: 1rem;
-    position: relative; /* Necesario para colocar el pseudo-elemento */
-    padding-top: 1rem; /* Espacio entre el texto y la línea */
+    position: relative;
+    padding-top: 1rem; 
  }
  
  footer p::before {
     content: '';
     position: absolute;
     top: 0;
-    right: 0%; /* Hace que la línea se extienda más allá del texto */
-    width: 250%; /* Hace que la línea sea más larga que el texto */
+    right: 0%; 
+    width: 250%; 
     height: 2px;
     background-color: black;
  }
 
-/*##########################ABOUT###################################*/
+
 
 .about-title{
     color: black;
@@ -236,7 +235,7 @@ h3{
     font-style: oblique;
 }
 
-/*##################MENU##############################################*/
+
 
 
 .menu{
@@ -255,17 +254,17 @@ h3{
 
 .menu-main {
     display: flex;
-    flex-direction: column; /* Elementos en columna */
-    align-items: center; /* Centra horizontalmente */
-    justify-content: center; /* Centra verticalmente si el contenedor tiene altura */
-    text-align: left; /* Centra el texto */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: left; 
     width: 100%;
 }
 
 .menu-main section {
-    width: 80%; /* Ajusta el ancho de los elementos */
-    max-width: 600px; /* Máximo ancho para que no se extienda demasiado */
-    margin-bottom: 1rem; /* Espaciado entre secciones */
+    width: 80%; 
+    max-width: 600px; 
+    margin-bottom: 1rem; 
 }
 
 .ul-menu{
@@ -287,17 +286,17 @@ h3{
     background-color:#AEC6CF;
 }
 
-/* Estilos para ocultar el contenido adicional inicialmente */
+
 .more-text {
     display: none;
 }
 
-/* Cuando el artículo tiene la clase "expanded", mostrar el texto */
+
 article.gallery.expanded .more-text {
     display: inline;
 }
 
-/* Estilo para el botón */
+
 .toggle-btn {
     margin-top: 1rem;
     padding: 10px 20px;
@@ -312,7 +311,7 @@ article.gallery.expanded .more-text {
 }
 
 article.gallery p {
-    flex-grow: 1; /* Asegura que el párrafo ocupe el espacio disponible */
+    flex-grow: 1; 
 }
 
 section.gallery .toggle-btn:hover {
@@ -320,8 +319,8 @@ section.gallery .toggle-btn:hover {
 }
 
 article.gallery p {
-    flex-grow: 1; /* Asegura que el párrafo ocupe el espacio disponible dentro del artículo */
-    margin-bottom: 1rem; /* Espacio debajo del texto */
+    flex-grow: 1; 
+    margin-bottom: 1rem; 
 }
 
 .oferta-p{
@@ -331,42 +330,42 @@ article.gallery p {
    font-size: 2rem;
 }
 
-/*--------css para el formulario---------*/
+
 
 label{
-    display: block; /* Hace que los elementos se muestren en una línea */
-    margin-top: 1rem; /* Espacio arriba */
-    font-size: 1.2rem; /* Tamaño del texto */
+    display: block; 
+    margin-top: 1rem; 
+    font-size: 1.2rem; 
 }
 
 input{
-    width: 30%; /* Hace que ocupe todo el ancho disponible */
-    height: 30px; /* Ajusta la altura */
-    font-size: 1rem; /* Tamaño del texto */
+    width: 30%; 
+    height: 30px;
+    font-size: 1rem; 
     padding: 10px;
 }
 
 textarea {
-    width: 50%; /* Hace que ocupe todo el ancho disponible */
-    height: 150px; /* Ajusta la altura */
-    font-size: 1rem; /* Tamaño del texto */
+    width: 50%; 
+    height: 150px; 
+    font-size: 1rem; 
     padding: 10px;
 }
 
 button {
-    width: 150px; /* Ancho del botón */
-    height: 50px; /* Altura */
-    font-size: 18px; /* Tamaño del texto */
+    width: 150px; 
+    height: 50px; 
+    font-size: 18px; 
     padding: 10px;
-    background-color: #007bff; /* Color de fondo */
-    color: white; /* Color del texto */
+    background-color: #007bff; 
+    color: white; 
     border: none;
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
+    border-radius: 5px; 
+    cursor: pointer; 
 }
 
 button:hover {
-    background-color: #0056b3; /* Color al pasar el mouse */
+    background-color: #0056b3; 
 }
 
 .redes{
@@ -396,51 +395,49 @@ button:hover {
     font-style: oblique;
 }
 
-/* ----------------------------------- Cambios para la Responsividad (agregados) ----------------------------------- */
-/* ---------------------------- Cambios para la Responsividad ---------------------------- */
+
 @media (max-width: 768px) {
-    /* 1. Ajustes generales */
+    
     h1{
-        font-size: 1.7rem; /* Reducción del tamaño de la fuente */
+        font-size: 1.7rem; 
     }
 
     h2{
-        font-size: 1.5rem; /* Reducción del tamaño de la fuente */
+        font-size: 1.5rem; 
     }
     h3{
-        font-size: 1.2rem; /* Reducción del tamaño de la fuente */
+        font-size: 1.2rem; 
     }
 
     p {
-        font-size: 1rem; /* Reducción del tamaño de la fuente */
+        font-size: 1rem; 
     }
 
 
     header img {
-        width: 80%; /* Aumenta el tamaño del logo en pantallas pequeñas */
+        width: 80%; 
     }
 
-    /* 2. Galería */
+    
     section.gallery {
-        flex-direction: column; /* Apilar los artículos verticalmente */
-        gap: 1rem; /* Espacio entre artículos */
+        flex-direction: column; 
+        gap: 1rem;
     }
 
     article.gallery p {
-        margin-top: 0; /* Eliminar márgenes negativos */
+        margin-top: 0; 
     }
 
     article.gallery img {
-        margin-bottom: 1rem; /* Reduce el margen debajo de las imágenes */
+        margin-bottom: 1rem; 
     }
 
-    /* 3. Ajuste de imágenes */
     img {
-        max-width: 100%; /* Asegura que las imágenes no se desborden */
+        max-width: 100%; 
         height: auto;
     }
 
-    /* 4. Barra de navegación */
+    
     nav {
         width: 100%;
         margin-bottom: 1rem;
@@ -448,55 +445,55 @@ button:hover {
     
     
     nav ul {
-        flex-direction:row; /* Apilar los enlaces de navegación */
-        font-size: 1rem; /* Reduce el tamaño de la fuente en la navegación */
+        flex-direction:row; 
+        font-size: 1rem; 
         padding: 0;
         text-align: center;
-        flex-wrap: wrap; /* Permite que los elementos se envuelvan */
-        justify-content: center; /* Centra los elementos */
+        flex-wrap: wrap; 
+        justify-content: center; 
     }
 
     nav ul li {
-        margin: 0.3rem 0; /* Espaciado reducido */
-        font-size: 1rem; /* Reducir aún más si es necesario */
-        flex: 1 1 auto; /* Permite que los elementos se ajusten */
+        margin: 0.3rem 0; 
+        font-size: 1rem; 
+        flex: 1 1 auto; 
         text-align: center;
-        margin: 5px; /* Espacio entre los elementos */
+        margin: 5px; 
     }
 
     nav ul li a {
-        font-size: 1rem; /* Reducir aún más si es necesario */
-        padding: 0.5rem; /* Asegurar espacio alrededor de los enlaces */
-        display: block; /* Hacer que los enlaces ocupen el ancho completo */
+        font-size: 1rem; 
+        padding: 0.5rem; 
+        display: block; 
     
     }
 
 
-    /* 5. Sección de promociones */
+    
     section.promo {
-        flex-direction: column; /* Cambia a una columna para pantallas pequeñas */
-        height: auto; /* Ajusta la altura */
+        flex-direction: column; 
+        height: auto; 
     }
 
     .promo p {
-        font-size: 1.2rem; /* Ajusta el tamaño del texto */
-        margin: 1rem; /* Ajusta los márgenes */
+        font-size: 1.2rem; 
+        margin: 1rem; 
     }
 
-    /* 6. Footer */
+    
     footer {
-        flex-direction: column; /* Apilar los elementos del footer */
+        flex-direction: column; 
         align-items: center;
     }
 
     footer img {
-        width: 20%; /* Aumenta el logo del pie de página */
+        width: 20%; 
     }
 
-    /* 8. Fondo de la página de menú */
+    
     .background-menu {
-        background-position: center;  /* Centra la imagen en el fondo */
-        background-repeat: no-repeat;  /* Evita que la imagen se repita */
+        background-position: center;  
+        background-repeat: no-repeat;
         background-color: #AEC6CF;
         background-image: url("../img/fondo-menu.png");
         background-size: contain;
@@ -507,26 +504,26 @@ button:hover {
     }
 
 
-/* Pantallas de 768px o menos (móviles más pequeños) */
+
 @media (max-width: 768px) {
     form {
-        width: 100%; /* Reduce el ancho del formulario en móviles */
+        width: 100%; 
     }
 
     input {
-        width: 70vw; /* Los inputs ocupan el 50% del ancho de la pantalla */
-        height: 50px; /* Más altos para mejor visibilidad */
-        font-size: 1.2rem; /* Texto más grande */
+        width: 70vw; 
+        height: 50px; 
+        font-size: 1.2rem; 
     }
 
     textarea {
-        width: 80vw; /* Ocupa el 100% del ancho de la pantalla */
-        height: 150px; /* Mantiene una altura adecuada */
-        font-size: 1.2rem; /* Texto más grande */
+        width: 80vw;  
+        height: 150px; 
+        font-size: 1.2rem; 
     }
 
     button {
-        width: 60%; /* Botón más grande pero no tanto */
+        width: 60%; 
         height: 55px;
         font-size: 1.2rem;
 
@@ -535,3 +532,5 @@ button:hover {
 
 
 }
+
+
